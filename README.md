@@ -10,14 +10,14 @@ It is hard to understand why people turn to crime. Mental illnesses often go und
 
 ## Hypotheses
 
-1. H₀: There is no relationship between untreated mental illness, drug use, and crime rates.  
-   H₁: Higher rates of undiagnosed mental illnesses are connected with increased use of drugs and this in turn contributes to higher crime rates.
+**1. H₀:** There is no relationship between untreated mental illness, drug use, and crime rates.  
+   **H₁:** Higher rates of undiagnosed mental illnesses are connected with increased use of drugs and this in turn contributes to higher crime rates.
 
-2. H₀: The availability of mental health care services has no effect on drug use rates.  
-   H₁: Areas with limited access to mental health services have significantly higher drug use rates.
+**2. H₀:** The availability of mental health care services has no effect on drug use rates.  
+   **H₁:** Areas with limited access to mental health services have significantly higher drug use rates.
 
-3. H₀: The severity of untreated mental health disorders does not influence the likelihood of criminal behavior.  
-   H₁: Individuals with severe, untreated mental health conditions are more likely to engage in criminal activity.
+**3. H₀:** The severity of untreated mental health disorders does not influence the likelihood of criminal behavior.  
+   **H₁:** Individuals with severe, untreated mental health conditions are more likely to engage in criminal activity.
 
 ## Data Sources
 
@@ -42,7 +42,8 @@ It is hard to understand why people turn to crime. Mental illnesses often go und
 
 ## Data Collection and Preparation
 
-Datasets were cleaned and merged by U.S. state. Population-normalized metrics include:
+Datasets were cleaned and merged by U.S. state.  
+Population normalized metrics include:
 
 - Mental illness prevalence (AMI and SMI %)
 - Drug use (% past-month illicit use)
@@ -52,14 +53,14 @@ Datasets were cleaned and merged by U.S. state. Population-normalized metrics in
 ## Exploratory Data Analysis (EDA)
 
 ### Mental Illness vs. Drug Use
-- Positive trend observed between AMI% and drug use (**r ≈ 0.29**)
+- Positive trend observed between AMI% and drug use (r ≈ 0.29)
 - States like Oregon and Alaska show high AMI and high drug use
-- **Utah** stands out with high AMI but low drug use (possibly due to cultural/religious factors)
+- Utah stands out with high AMI but low drug use (possibly due to cultural/religious factors)
 
 ### Drug Use vs. Crime
-- Mild positive correlation observed (**r ≈ 0.34**)
-- **D.C.** and **New Mexico** rank high in both drug use and violent crime
-- **Maine** has high drug use but low crime — a notable outlier
+- Mild positive correlation observed (r ≈ 0.34)
+- D.C. and New Mexico rank high in both drug use and violent crime
+- Maine has high drug use but low crime — a notable outlier
 
 ### Service Access vs. Drug Use
 - Unexpected result: states with more mental health facilities do not always have lower drug use
@@ -67,7 +68,7 @@ Datasets were cleaned and merged by U.S. state. Population-normalized metrics in
 
 ### Service Access vs. Crime
 - Slight negative trend between facility access and violent crime
-- States with higher service access tend to show lower crime, though not universally (e.g., **Alaska** is an exception)
+- States with higher service access tend to show lower crime, though not universally (e.g. Alaska is an exception)
 
 ## Hypothesis Testing
 
@@ -80,7 +81,7 @@ Datasets were cleaned and merged by U.S. state. Population-normalized metrics in
 - **AMI% vs. Drug Use**: r ≈ 0.29  
 - **AMI% vs. Crime**: r ≈ 0.24  
 - Suggests correlation, but not strong enough for statistical significance  
-- Example states with large treatment gaps: **Oregon**, **Nevada**
+- Example states with large treatment gaps: Oregon, Nevada
 
 ### H3: Severe Mental Illness → Crime
 - **SMI% vs. Crime**: r ≈ 0.21  
