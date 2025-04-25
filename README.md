@@ -89,6 +89,12 @@ Population normalized metrics include:
   - Drug use is the stronger predictor  
 - **Conclusion**: Weak direct link; the effect is likely mediated through substance use
 
+## Visualizations
+
+### Correlation Heatmap
+Shows the relationship between mental illness, drug use, service access, and crime.
+https://private-user-images.githubusercontent.com/182896253/437596287-b7a49625-afac-4dad-8e4f-e47b0700878b.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDU2MTIzNjcsIm5iZiI6MTc0NTYxMjA2NywicGF0aCI6Ii8xODI4OTYyNTMvNDM3NTk2Mjg3LWI3YTQ5NjI1LWFmYWMtNGRhZC04ZTRmLWU0N2IwNzAwODc4Yi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwNDI1JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDQyNVQyMDE0MjdaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT03ZWZjMTg0NTNkNGExZjU2ODRjY2UyMzljMzk4NjcyMGFhNGMxZTRhNmE5NGExZjM2MmIxYmRjNzk0MmIwNzZlJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.6vEFepXXqAFmxtO0kdlUXKCTIfg03QUNw__c05-uQJI
+
 ## Key Findings
 
 - Drug use and mental illness show a moderate correlation
