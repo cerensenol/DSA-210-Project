@@ -1,40 +1,96 @@
 # The Path to Crime
-## Overview
-This project examines the relationship between the use of drugs and crime rates in the context of the role plated by untreated mental ilnesses in the use of drugs.
+
+## Project Overview
+
+This project examines the relationship between the use of drugs and crime rates in the context of the role played by untreated mental illnesses in the use of drugs.
 
 ## Motivation
-It is hard to understand why people turn to crime. Mental illnesses often go undiagnosed and many people self-medicate with drugs; leading to theft, violence and drug-related crimes. Could better mental health care and early intervention reduce crime? I would like to explore this connection and use data science to find solutions that can improve public safety and mental health outcomes.
+
+It is hard to understand why people turn to crime. Mental illnesses often go undiagnosed and many people self-medicate with drugs, leading to theft, violence and drug-related crimes. Could better mental health care and early intervention reduce crime? This project explores this connection and uses data science to find insights that can improve public safety and mental health outcomes.
 
 ## Hypotheses
-**1. H₀:** There is no relationship between untreated mental illness, drug use, and crime rates.  
-**H₁:** Higher rates of undiagnosed mental illnesses are connected with increased use of drugs and this in turn contributes to higher crime rates.  
-**2. H₀:** The availability of mental health care services has no effect on drug use rates.  
-**H₁:** Areas with limited access to mental health services have significantly higher drug use rates  
-**3. H₀:** The severity of untreated mental health disorders does not influence the likelihood of criminal behavior.  
-**H₁:** Individuals with severe, untreated mental health conditions are more likely to engage in criminal activity.  
+
+1. H₀: There is no relationship between untreated mental illness, drug use, and crime rates.  
+   H₁: Higher rates of undiagnosed mental illnesses are connected with increased use of drugs and this in turn contributes to higher crime rates.
+
+2. H₀: The availability of mental health care services has no effect on drug use rates.  
+   H₁: Areas with limited access to mental health services have significantly higher drug use rates.
+
+3. H₀: The severity of untreated mental health disorders does not influence the likelihood of criminal behavior.  
+   H₁: Individuals with severe, untreated mental health conditions are more likely to engage in criminal activity.
 
 ## Data Sources
-**-** National Institute of Mental Health (NIMH) — Mental health statistics and treatment access.  
-**-** Substance Abuse and Mental Health Services Administration (SAMHSA) — Drug use and addiction trends.  
-**-** FBI Uniform Crime Reporting (UCR) Program — Crime data, including drug-related offenses.  
-**-** CDC Behavioral Risk Factor Surveillance System (BRFSS) — Mental health and substance use data.  
-**-** State-Level Mental Health Facility Data — Availability of mental health services.  
 
-## Analysis Plan
-**1.** Data Collection and Cleaning — Merging mental health, drug use and crime data from different sources.  
-**2.** Exploratory Data Analysis — Visualizing relationships between mental health struggles, drug use and crime.  
-**3.** Statistical Analysis —  
-**-** Correlation tests to see if lack of mental health care leads to more drug use.  
-**-** Models to predict crime rates based on mental health and substance abuse data.  
-**-** Hypothesis testing.  
-**4.** Findings and Improvements — Identifying patterns and discussing potential solutions.  
+- National Institute of Mental Health (NIMH) — Mental health statistics and treatment access.  
+- Substance Abuse and Mental Health Services Administration (SAMHSA) — Drug use and addiction trends.  
+- FBI Uniform Crime Reporting (UCR) Program — Crime data, including drug-related offenses.  
+- CDC Behavioral Risk Factor Surveillance System (BRFSS) — Mental health and substance use data.  
+- State-Level Mental Health Facility Data — Availability of mental health services.
 
-## Expected Findings
-**-** Higher drug abuse rates in areas with poor mental healthcare access.  
-**-** Stronger correlation between drug use and crime where mental health struggles are untreated.  
-**-** Expanding mental health services could help reduce drug-related crimes.  
+## Data Collection and Preparation
 
-## Future Work and Improvements
-**-** Expand the dataset by incorporating additional factors like income, level of education and healthcare policies.  
-**-** Apply machine learning techniques to better predict crime trends based on mental health and drug use patterns.  
-**-** Investigate rehabilitation programs to see if access to mental health support reduces crime rates in the long run. 
+Datasets were cleaned and merged by U.S. state. Population-normalized metrics include:
+
+- Mental illness prevalence (AMI and SMI %)
+- Drug use (% past-month illicit use)
+- Violent crime rate (per 100,000)
+- Number of mental health treatment facilities per 100,000 people
+
+## Exploratory Data Analysis (EDA)
+
+### Mental Illness vs. Drug Use
+- Positive trend observed between AMI% and drug use (**r ≈ 0.29**)
+- States like **Oregon** and **Alaska** show high AMI and high drug use
+- **Utah** stands out with high AMI but low drug use (possibly due to cultural/religious factors)
+
+### Drug Use vs. Crime
+- Mild positive correlation observed (**r ≈ 0.34**)
+- **D.C.** and **New Mexico** rank high in both drug use and violent crime
+- **Maine** has high drug use but low crime — a notable outlier
+
+### Service Access vs. Drug Use
+- Unexpected result: states with more mental health facilities do not always have lower drug use
+- Possible explanation: services are often expanded reactively in response to rising drug problems
+
+### Service Access vs. Crime
+- Slight negative trend between facility access and violent crime
+- States with higher service access tend to show lower crime, though not universally (e.g., **Alaska** is an exception)
+
+## Hypothesis Testing
+
+### H1: Service Access → Drug Use
+- **Test**: Two-sample t-test between low and high service access states
+- **Result**: p-value ≈ 0.06 — not statistically significant
+- **Interpretation**: Mixed results; some low-access states show lower drug use
+
+### H2: Untreated Mental Illness → Drug Use / Crime
+- **AMI% vs. Drug Use**: r ≈ 0.29  
+- **AMI% vs. Crime**: r ≈ 0.24  
+- Suggests correlation, but not strong enough for statistical significance  
+- Example states with large treatment gaps: **Oregon**, **Nevada**
+
+### H3: Severe Mental Illness → Crime
+- **SMI% vs. Crime**: r ≈ 0.21  
+- **Regression model**: Crime ~ SMI + Drug Use  
+  - Drug use is the stronger predictor  
+- **Conclusion**: Weak direct link; the effect is likely mediated through substance use
+
+## Key Findings
+
+- Drug use and mental illness show a moderate correlation
+- Drug use has a stronger statistical relationship with crime than mental illness alone
+- An increase in facilities does not guarantee improvement — local context matters
+- States with poor access to mental healthcare often face higher public health burdens
+
+## Limitations
+
+- Data is aggregated at the state level, potentially hiding regional differences
+- No direct measurement of untreated mental illness — proxy indicators were used
+- Correlation does not imply causation
+- Facility count does not reflect service quality or treatment effectiveness
+
+## Future Work
+
+- Include additional socioeconomic variables (income, education, housing access)
+- Apply machine learning models to predict high-risk regions (planned for May 23 milestone)
+- Assess the impact of mental health policies and treatment program availability on long-term crime trends
