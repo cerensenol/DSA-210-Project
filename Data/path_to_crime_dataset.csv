@@ -8,7 +8,6 @@ MHClients: 4,600
 Population: 733,391  
 Facilities_per_100k: 7.36  
 
-
 State: California  
 AMI%: 20.5  
 SMI%: 4.8  
@@ -18,7 +17,6 @@ FacilitiesCount: 630
 MHClients: 58,000  
 Population: 39,538,223  
 Facilities_per_100k: 1.59  
-
 
 State: Florida  
 AMI%: 19.3  
@@ -30,7 +28,6 @@ MHClients: 43,000
 Population: 21,538,187  
 Facilities_per_100k: 1.95  
 
-
 State: New Mexico  
 AMI%: 22.1  
 SMI%: 5.6  
@@ -40,7 +37,6 @@ FacilitiesCount: 73
 MHClients: 7,800  
 Population: 2,117,522  
 Facilities_per_100k: 3.45  
-
 
 State: Oregon  
 AMI%: 26.7  
