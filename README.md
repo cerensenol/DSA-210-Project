@@ -21,11 +21,24 @@ It is hard to understand why people turn to crime. Mental illnesses often go und
 
 ## Data Sources
 
-- National Institute of Mental Health (NIMH) — Mental health statistics and treatment access.  
-- Substance Abuse and Mental Health Services Administration (SAMHSA) — Drug use and addiction trends.  
-- FBI Uniform Crime Reporting (UCR) Program — Crime data, including drug-related offenses.  
-- CDC Behavioral Risk Factor Surveillance System (BRFSS) — Mental health and substance use data.  
-- State-Level Mental Health Facility Data — Availability of mental health services.
+- **SAMHSA – NSDUH State Estimates (2021–2022)**  
+  State-level statistics on Any Mental Illness (AMI), Serious Mental Illness (SMI), and illicit drug use.
+
+- **SAMHSA – National Mental Health Services Survey (N-MHSS) 2020**  
+  Data on the number of mental health treatment facilities and patients served per state.
+
+- **FBI Uniform Crime Reporting (UCR) 2022**  
+  Violent crime rates per 100,000 residents, including assault, robbery, homicide, etc.
+
+- **U.S. Census 2020 State Population Estimates**  
+  Used for population normalization (e.g., facilities per 100k).
+
+- **CDC Behavioral Risk Factor Surveillance System (BRFSS)**  
+  Used for cross-checking behavioral health trends (not primary source).
+
+- **NIMH (National Institute of Mental Health)**  
+  Provided additional context on national-level mental health trends.
+
 
 ## Data Collection and Preparation
 
@@ -40,7 +53,7 @@ Datasets were cleaned and merged by U.S. state. Population-normalized metrics in
 
 ### Mental Illness vs. Drug Use
 - Positive trend observed between AMI% and drug use (**r ≈ 0.29**)
-- States like **Oregon** and **Alaska** show high AMI and high drug use
+- States like Oregon and Alaska show high AMI and high drug use
 - **Utah** stands out with high AMI but low drug use (possibly due to cultural/religious factors)
 
 ### Drug Use vs. Crime
