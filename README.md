@@ -104,14 +104,13 @@ Population normalized metrics include:
 | **MHClient_per_100k** | Mental health clients per 100,000 people (engineered) |
 | **Log_CrimeRate** | Log-transformed crime rate for modeling (engineered) |
 
-
 ## Methods
 
 The analysis began with exploratory data analysis (EDA), followed by hypothesis testing. To quantify relationships between variables, Linear Regression (a fundamental machine learning technique suitable for small, well-structured datasets) was applied.
 
 For each hypothesis, their R² (coefficient of determination) values were used to evaluate explanatory power.
 
-## Findings
+## Key Findings
 
 ### Hypothesis 1: Access to Services → Drug Use
 
