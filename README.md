@@ -18,6 +18,76 @@ It is hard to understand why people turn to crime. Mental illnesses often go und
 
 **3. H₀:** The severity of untreated mental health disorders does not influence the likelihood of criminal behavior.  
    **H₁:** Individuals with severe, untreated mental health conditions are more likely to engage in criminal activity.
+ 
+## Data Sources
+
+- **SAMHSA – NSDUH State Estimates (2021–2022)**  
+  State-level statistics on Any Mental Illness (AMI), Serious Mental Illness (SMI), and illicit drug use.
+
+- **SAMHSA – National Mental Health Services Survey (N-MHSS) 2020**  
+  Data on the number of mental health treatment facilities and patients served per state.
+
+- **FBI Uniform Crime Reporting (UCR) 2022**  
+  Violent crime rates per 100,000 residents, including assault, robbery, homicide, etc.
+
+- **U.S. Census 2020 State Population Estimates**  
+  Used for population normalization (e.g., facilities per 100k).
+
+- **CDC Behavioral Risk Factor Surveillance System (BRFSS)**  
+  Used for cross-checking behavioral health trends (not primary source).
+
+- **NIMH (National Institute of Mental Health)**  
+  Provided additional context on national-level mental health trends.
+
+## Data Collection and Preparation
+
+Datasets were cleaned and merged by U.S. state.  
+Population normalized metrics include:
+
+- Mental illness prevalence (AMI and SMI %)
+- Drug use (% past-month illicit use)
+- Violent crime rate (per 100,000)
+- Number of mental health treatment facilities per 100,000 people
+
+## Exploratory Data Analysis (EDA)
+
+### Mental Illness vs. Drug Use
+- Positive trend observed between AMI% and drug use (r ≈ 0.29)
+- States like Oregon and Alaska show high AMI and high drug use
+- Utah stands out with high AMI but low drug use (possibly due to cultural/religious factors)
+
+### Drug Use vs. Crime
+- Mild positive correlation observed (r ≈ 0.34)
+- D.C. and New Mexico rank high in both drug use and violent crime
+- Maine has high drug use but low crime — a notable outlier
+
+### Service Access vs. Drug Use
+- Unexpected result: states with more mental health facilities do not always have lower drug use
+- Possible explanation: services are often expanded reactively in response to rising drug problems
+
+### Service Access vs. Crime
+- Slight negative trend between facility access and violent crime
+- States with higher service access tend to show lower crime, though not universally (e.g. Alaska is an exception)
+
+## Hypothesis Testing
+
+### H1: Service Access → Drug Use
+- **Test**: Two-sample t-test between low and high service access states
+- **Result**: p-value ≈ 0.06 — not statistically significant
+- **Interpretation**: Mixed results; some low-access states show lower drug use
+
+### H2: Untreated Mental Illness → Drug Use / Crime
+- **AMI% vs. Drug Use**: r ≈ 0.29  
+- **AMI% vs. Crime**: r ≈ 0.24  
+- Suggests correlation, but not strong enough for statistical significance  
+- Example states with large treatment gaps: Oregon, Nevada
+
+### H3: Severe Mental Illness → Crime
+- **SMI% vs. Crime**: r ≈ 0.21  
+- **Regression model**: Crime ~ SMI + Drug Use  
+  - Drug use is the stronger predictor  
+- **Conclusion**: Weak direct link; the effect is likely mediated through substance use
+
 
 ## Data Description
 
