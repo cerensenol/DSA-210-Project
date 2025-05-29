@@ -1,24 +1,9 @@
-import pandas as pd
-import numpy as np
-import matplotlib.pyplot as plt
-import seaborn as sns
-sns.set(style="whitegrid")
+final_df_reordered = final_df[[
+    'State', 'AMI%', 'SMI%', 'DrugUse%', 'ViolentCrimePer100k',
+    'FacilitiesCount', 'MHClients', 'Population', 'Facilities_per_100k',
+    'MHClient_per_100k', 'Log_CrimeRate'
+]]
 
-data = {
-    'State': ['Alaska', 'California', 'Florida', 'New Mexico', 'Oregon'],
-    'AMI%': [25.2, 20.5, 19.3, 22.1, 26.7],
-    'SMI%': [6.8, 4.8, 4.1, 5.6, 7.2],
-    'DrugUse%': [17.5, 15.0, 14.2, 18.9, 19.1],
-    'ViolentCrimePer100k': [837, 442, 384, 778, 292],
-    'FacilitiesCount': [54, 630, 420, 73, 110],
-    'MHClients': [6000, 50000, 43000, 7800, 10500],
-    'Population': [733391, 39538223, 21538187, 2117522, 4237256],
-    'Facilities_per_100k': [7.36, 1.59, 1.95, 3.45, 2.60]
-}
-
-df = pd.DataFrame(data)
-
-df['MHClient_per_100k'] = (df['MHClients'] / df['Population']) * 100000
-df['Log_CrimeRate'] = np.log(df['ViolentCrimePer100k'])  # opsiyonel log dönüşümü
-
-df.head()
+final_csv_path = "/mnt/data/path_to_crime_dataset_final_formatted.csv"
+final_df_reordered.to_csv(final_csv_path, index=False)
+final_df_reordered.head()
