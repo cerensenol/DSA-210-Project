@@ -111,6 +111,10 @@ The analysis began with exploratory data analysis (EDA), followed by hypothesis 
 For each hypothesis, their R² (coefficient of determination) values were used to evaluate explanatory power.
   
 ## Visualizations
+  
+### Correlation Heatmap
+Shows the relationship between mental illness, drug use, service access, and crime.
+
 
 ## Key Findings
 
