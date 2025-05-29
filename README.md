@@ -72,26 +72,23 @@ Population normalized metrics include:
 ## Hypothesis Testing
 
 ### H1: Service Access → Drug Use
-- **Test**: Two-sample t-test between low and high service access states
-- **Result**: p-value ≈ 0.06 — not statistically significant
-- **Interpretation**: Mixed results; some low-access states show lower drug use
+- Test: Two-sample t-test between low and high service access states
+- Result: p-value ≈ 0.06 — not statistically significant
+- Interpretation: Mixed results; some low-access states show lower drug use
 
 ### H2: Untreated Mental Illness → Drug Use / Crime
-- **AMI% vs. Drug Use**: r ≈ 0.29  
-- **AMI% vs. Crime**: r ≈ 0.24  
+- AMI% vs. Drug Use: r ≈ 0.29  
+- AMI% vs. Crime: r ≈ 0.24  
 - Suggests correlation, but not strong enough for statistical significance  
 - Example states with large treatment gaps: Oregon, Nevada
 
 ### H3: Severe Mental Illness → Crime
-- **SMI% vs. Crime**: r ≈ 0.21  
-- **Regression model**: Crime ~ SMI + Drug Use  
-  - Drug use is the stronger predictor  
-- **Conclusion**: Weak direct link; the effect is likely mediated through substance use
-
+- SMI% vs. Crime: r ≈ 0.21  
+- Regression model: Crime ~ SMI + Drug Use  
+- Drug use is the stronger predictor  
+- Conclusion: Weak direct link; the effect is likely mediated through substance use
 
 ## Data Description
-
-The dataset is composed of aggregated state-level statistics from reliable sources:
 
 | Feature | Description |
 |--------|-------------|
@@ -110,52 +107,36 @@ The dataset is composed of aggregated state-level statistics from reliable sourc
 
 ## Methods
 
-The analysis began with exploratory data analysis (EDA), followed by hypothesis testing. To quantify relationships between variables, we applied **Linear Regression** — a fundamental machine learning technique suitable for small, well-structured datasets like ours.
+The analysis began with exploratory data analysis (EDA), followed by hypothesis testing. To quantify relationships between variables, Linear Regression (a fundamental machine learning technique suitable for small, well-structured datasets) was applied.
 
-For each hypothesis, one or more linear regression models were applied and their **R² (coefficient of determination)** values were used to evaluate explanatory power.
-
----
+For each hypothesis, their R² (coefficient of determination) values were used to evaluate explanatory power.
 
 ## Findings
 
 ### Hypothesis 1: Access to Services → Drug Use
 
-- A linear regression between **Facilities_per_100k** and **DrugUse%** was conducted.
-- The regression line showed a **weak negative slope**, suggesting that greater access may reduce drug use.
-- However, the **R² score was low**, indicating that other factors are likely influential.
+- A linear regression between Facilities_per_100k and DrugUse% was conducted.
+- The regression line showed a weak negative slope, suggesting that greater access may reduce drug use.
+- However, the R² score was low, indicating that other factors are likely influential.
 
 ### Hypothesis 2: AMI% → Drug Use / Crime
 
 - Two separate regressions:
-  - **AMI% vs Drug Use%**: A weak to moderate **positive trend**, supporting the hypothesis.
-  - **AMI% vs Violent Crime**: Slight positive slope but again with a low R².
+  - AMI% vs Drug Use%: A weak to moderate positive trend, supporting the hypothesis.
+  - AMI% vs Violent Crime: Slight positive slope but again with a low R².
 - Suggests that while mental illness correlates with both outcomes, the relationship is not strong enough alone to explain the variation.
 
 ### Hypothesis 3: SMI% + Drug Use% → Violent Crime
 
-- A multiple linear regression using **SMI%** and **Drug Use%** as predictors was conducted.
-- **Drug use** emerged as a stronger predictor than SMI%.
-- The model performed **moderately well** (R² around 0.4), indicating partial explanatory power.
-
----
-
-## Machine Learning Technique
-
-This project applied one machine learning technique:
-
-- ✅ **Linear Regression** (univariate and multivariate)
-
-Other methods like Random Forest or Decision Tree were considered, but due to environment limitations, only linear regression was successfully implemented.
-
----
+- A multiple linear regression using SMI% and Drug Use% as predictors was conducted.
+- Drug use emerged as a stronger predictor than SMI%.
+- The model performed moderately well (R² around 0.4), indicating partial explanatory power.
 
 ## Conclusion
 
-This study supports the idea that mental illness and substance use are meaningfully linked to crime, but not in isolation. Key takeaways:
+This study supports the idea that mental illness and substance use are meaningfully linked to crime, but not in isolation.
 
 - Mental illness, particularly when untreated, is associated with increased drug use.
 - Drug use is more strongly associated with violent crime than mental illness alone.
 - States with better access to mental health services may see slightly lower substance use, but access alone is not a sufficient predictor.
 - Linear regression models helped reveal these patterns, though their explanatory power was moderate at best — highlighting the need for more granular or multi-factor data (e.g., socioeconomic, education, policy).
-
-This analysis demonstrates the power of combining public datasets and machine learning to explore complex public health questions.
