@@ -59,7 +59,7 @@ Population normalized metrics include:
 ### Drug Use vs. Crime
 - Mild positive correlation observed (r ≈ 0.34)
 - D.C. and New Mexico rank high in both drug use and violent crime
-- Maine has high drug use but low crime — a notable outlier
+- Maine has high drug use but low crime - a notable outlier
 
 ### Service Access vs. Drug Use
 - Unexpected result: states with more mental health facilities do not always have lower drug use
@@ -140,7 +140,7 @@ Shows the relationship between mental illness, drug use, service access, and cri
 ## Limitations
 
 - Data is aggregated at the state level, potentially hiding regional differences
-- No direct measurement of untreated mental illness — proxy indicators were used
+- No direct measurement of untreated mental illness - proxy indicators were used
 - Correlation does not imply causation
 - Facility count does not reflect service quality or treatment effectiveness
 
@@ -151,4 +151,4 @@ This study supports the idea that mental illness and substance use are meaningfu
 - Mental illness, particularly when untreated, is associated with increased drug use.
 - Drug use is more strongly associated with violent crime than mental illness alone.
 - States with better access to mental health services may see slightly lower substance use, but access alone is not a sufficient predictor.
-- Linear regression models helped reveal these patterns, though their explanatory power was moderate at best — highlighting the need for more granular or multi-factor data (e.g., socioeconomic, education, policy).
+- Linear regression models helped reveal these patterns, though their explanatory power was moderate at best-highlighting the need for more granular or multi-factor data (e.g., socioeconomic, education, policy).
