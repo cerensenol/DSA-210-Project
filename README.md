@@ -131,6 +131,13 @@ For each hypothesis, their R² (coefficient of determination) values were used t
 - A multiple linear regression using SMI% and Drug Use% as predictors was conducted.
 - Drug use emerged as a stronger predictor than SMI%.
 - The model performed moderately well (R² around 0.4), indicating partial explanatory power.
+  
+## Limitations
+
+- Data is aggregated at the state level, potentially hiding regional differences
+- No direct measurement of untreated mental illness — proxy indicators were used
+- Correlation does not imply causation
+- Facility count does not reflect service quality or treatment effectiveness
 
 ## Conclusion
 
