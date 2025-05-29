@@ -109,6 +109,8 @@ Population normalized metrics include:
 The analysis began with exploratory data analysis (EDA), followed by hypothesis testing. To quantify relationships between variables, Linear Regression (a fundamental machine learning technique suitable for small, well-structured datasets) was applied.
 
 For each hypothesis, their R² (coefficient of determination) values were used to evaluate explanatory power.
+  
+## Visualizations
 
 ## Key Findings
 
