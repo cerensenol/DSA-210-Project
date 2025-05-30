@@ -137,7 +137,7 @@ Examines the relationship between mental health service access and drug use, sho
 
 ## AMI% vs Drug Use%
 Displays a positive linear trend between any mental illness and drug use, showing a potential link between the two.
-![Image](https://github.com/user-attachments/assets/bdae4ba2-3f27-45c3-b809-ab14374a337b)
+![Image](https://github.com/user-attachments/assets/697d7474-526e-4fb8-aad3-671d9d544204)
   
 ## AMI% vs Violent Crime Rate
 Shows a mild positive trend, suggesting that higher mental illness rates may slightly relate to increased violent crime.
