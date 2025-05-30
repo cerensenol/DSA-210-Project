@@ -106,9 +106,7 @@ Population normalized metrics include:
 
 ## Methods
 
-The analysis began with exploratory data analysis (EDA), followed by hypothesis testing. To quantify relationships between variables, Linear Regression (a fundamental machine learning technique suitable for small, well-structured datasets) was applied.
-
-For each hypothesis, their R² (coefficient of determination) values were used to evaluate explanatory power.
+The analysis began with exploratory data analysis (EDA), followed by hypothesis testing. To quantify relationships between variables, Linear Regression (a fundamental machine learning technique suitable for small, well-structured datasets) was applied. For each hypothesis, their R² (coefficient of determination) values were used to evaluate explanatory power.
   
 ## Visualizations
   
@@ -133,6 +131,7 @@ Examines the relationship between mental health service access and drug use, sho
 ![Image](https://github.com/user-attachments/assets/04c015fe-87e1-4873-9223-fdf330b90e91)
   
 ### RF Prediction of Drug Use from Facility Access
+Uses service access to estimate drug use levels, predictions generally align with actual data.
 ![Image](https://github.com/user-attachments/assets/52bc8135-04dc-403b-9447-8a134a9549e1)
 
 ### AMI% vs Drug Use%
@@ -144,19 +143,19 @@ Shows a mild positive trend, suggesting that higher mental illness rates may sli
 ![Image](https://github.com/user-attachments/assets/54a3db99-d6c4-417b-9422-44b5d4303435)
   
 ### RF Prediction of Drug Use from AMI%
-Random Forest model estimates state-level drug use based on mental illness rates.
+Estimates state-level drug use based on mental illness rates.
 ![Image](https://github.com/user-attachments/assets/67c1f166-48b2-42ca-8018-9a7ae1d0a645)
   
 ### SMI% vs Violent Crime Rate
-Shows a weak positive trend between serious mental illness rates and violent crime.
+Shows a weak but positive trend between serious mental illness rates and violent crime.
 ![Image](https://github.com/user-attachments/assets/64be224c-74e1-4423-be87-8058e80d1793)
 
 ### RF Prediction of Violent Crime from SMI% and Drug Use%
-Visualizes how well the Random Forest model predicts violent crime based on serious mental illness and drug use rates.
+Predicts violent crime based on serious mental illness and drug use rates.
 ![Image](https://github.com/user-attachments/assets/5b1a8fb5-dc2e-4502-88c8-4e6f33fc8df7)
   
 ### Prediction Residuals: RF Model for Violent Crime
-Shows the difference between actual and predicted violent crime rates by state, highlighting model accuracy.
+Shows the difference between actual and predicted violent crime rates by state, highlighting accuracy.
 ![Image](https://github.com/user-attachments/assets/34417578-8cf1-41e3-9298-1012f1948de0)
 
 ## Key Findings
