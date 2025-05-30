@@ -132,7 +132,7 @@ Compares the availability of mental health facilities across states on a per cap
 Examines the relationship between mental health service access and drug use, showing a weak negative trend.
 ![Image](https://github.com/user-attachments/assets/04c015fe-87e1-4873-9223-fdf330b90e91)
   
-### Drug Use from Facility Access
+### RF Prediction of Drug Use from Facility Access
 ![Image](https://github.com/user-attachments/assets/52bc8135-04dc-403b-9447-8a134a9549e1)
 
 ### AMI% vs Drug Use%
