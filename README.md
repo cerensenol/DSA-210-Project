@@ -151,7 +151,7 @@ Random Forest model estimates state-level drug use based on mental illness rates
 Shows a weak positive trend between serious mental illness rates and violent crime.
 ![Image](https://github.com/user-attachments/assets/64be224c-74e1-4423-be87-8058e80d1793)
 
-### RF Predictio of Violent Crime from SMI% and Drug Use%
+### RF Prediction of Violent Crime from SMI% and Drug Use%
 Visualizes how well the Random Forest model predicts violent crime based on serious mental illness and drug use rates.
 ![Image](https://github.com/user-attachments/assets/5b1a8fb5-dc2e-4502-88c8-4e6f33fc8df7)
   
