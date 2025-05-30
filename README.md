@@ -134,13 +134,13 @@ Examines the relationship between mental health service access and drug use, sho
   
 ## Drug Use from Facility Access
 Compares actual and predicted drug use rates based on facility access, highlighting predictive accuracy across states.
-![Image](https://github.com/user-attachments/assets/e5806adc-722a-49bc-8c12-f561a34939ea)
+![Image](https://github.com/user-attachments/assets/4aaec21e-cb25-480a-ae07-0464d56fa006)
 
-## Linear Regression: AMI% vs Drug Use%
+## AMI% vs Drug Use%
 Displays a positive linear trend between any mental illness and drug use, showing a potential link between the two.
 ![Image](https://github.com/user-attachments/assets/8d995040-7813-436c-8776-62901d1df375)
   
-## Linear Regression: AMI% vs Violent Crime Rate
+## AMI% vs Violent Crime Rate
 Shows a mild positive trend, suggesting that higher mental illness rates may slightly relate to increased violent crime.
 ![Image](https://github.com/user-attachments/assets/3f45bdc7-c53a-4073-a1d1-0de5c6fe6ae8)
   
@@ -152,7 +152,7 @@ Random Forest model estimates state-level drug use based on mental illness rates
 Shows a weak positive trend between serious mental illness rates and violent crime.
 ![Image](https://github.com/user-attachments/assets/34761668-3c5d-49bb-bc67-4af405381e0e)
 
-## Random Forest Prediction: Violent Crime from SMI% and Drug Use%
+## RF Prediction: Violent Crime from SMI% and Drug Use%
 Visualizes how well the Random Forest model predicts violent crime based on serious mental illness and drug use rates.
 ![Image](https://github.com/user-attachments/assets/d76960ae-646b-43e1-b45c-855b7c3f45a3)
   
