@@ -132,7 +132,7 @@ Compares the availability of mental health facilities across states on a per cap
 Examines the relationship between mental health service access and drug use, showing a weak negative trend.
 ![Image](https://github.com/user-attachments/assets/512b474a-38e3-46ea-a31d-4cd2dd4993f3)
   
-## Random Forest Prediction: Drug Use from Facility Access
+## Drug Use from Facility Access
 Compares actual and predicted drug use rates using a Random Forest model based on facility access, highlighting predictive accuracy across states.
 ![Image](https://github.com/user-attachments/assets/e5806adc-722a-49bc-8c12-f561a34939ea)
   
