@@ -112,53 +112,66 @@ For each hypothesis, their R² (coefficient of determination) values were used t
   
 ## Visualizations
   
+
+![Image](https://github.com/user-attachments/assets/04c015fe-87e1-4873-9223-fdf330b90e91)
+
+![Image](https://github.com/user-attachments/assets/52bc8135-04dc-403b-9447-8a134a9549e1)
+
+![Image](https://github.com/user-attachments/assets/bdae4ba2-3f27-45c3-b809-ab14374a337b)
+
+
+
+
+
+
+
 ### Correlation Heatmap
 Shows the relationship between mental illness, drug use, service access and crime.
-![Image](https://github.com/user-attachments/assets/97a66ce1-bcca-40a4-99db-2128e253b6eb)
+![Image](https://github.com/user-attachments/assets/f0a33cf7-2a74-414f-8fdf-3010a11d4cfa)
   
 ### Drug Use vs. Mental Illness Rate (AMI%)
 Highlights the positive association between mental illness rates and drug use across states.
-![Image](https://github.com/user-attachments/assets/63de2136-7289-44ad-956b-5b91d93e84cf)
+![Image](https://github.com/user-attachments/assets/b3b5e0d5-e09c-43b6-8c9c-781feef20438)
   
 ## Drug Use vs. Violent Crime Rate
 Reveals a mild positive correlation between drug use and violent crime rates across states.
-![Image](https://github.com/user-attachments/assets/30cce1d4-6be8-4f91-8fe3-1af03911a8ca)
+![Image](https://github.com/user-attachments/assets/1a4e3ac3-74bb-4939-9076-e8805f3fc63c)
   
 ## Facilities per 100k by State
 Compares the availability of mental health facilities across states on a per capita basis.
-![Image](https://github.com/user-attachments/assets/e462265b-b66b-48fd-828b-9f61ab7080d3)
+![Image](https://github.com/user-attachments/assets/04c015fe-87e1-4873-9223-fdf330b90e91)
   
 ## Facilities vs. Drug Use
 Examines the relationship between mental health service access and drug use, showing a weak negative trend.
-![Image](https://github.com/user-attachments/assets/512b474a-38e3-46ea-a31d-4cd2dd4993f3)
+![Image](https://github.com/user-attachments/assets/bdae4ba2-3f27-45c3-b809-ab14374a337b)
   
 ## Drug Use from Facility Access
 Compares actual and predicted drug use rates based on facility access, highlighting predictive accuracy across states.
-![Image](https://github.com/user-attachments/assets/4aaec21e-cb25-480a-ae07-0464d56fa006)
+![Image](https://github.com/user-attachments/assets/bdae4ba2-3f27-45c3-b809-ab14374a337b)
 
 ## AMI% vs Drug Use%
 Displays a positive linear trend between any mental illness and drug use, showing a potential link between the two.
-![Image](https://github.com/user-attachments/assets/8d995040-7813-436c-8776-62901d1df375)
+![Image](https://github.com/user-attachments/assets/54a3db99-d6c4-417b-9422-44b5d4303435)
   
 ## AMI% vs Violent Crime Rate
 Shows a mild positive trend, suggesting that higher mental illness rates may slightly relate to increased violent crime.
-![Image](https://github.com/user-attachments/assets/3f45bdc7-c53a-4073-a1d1-0de5c6fe6ae8)
+![Image](https://github.com/user-attachments/assets/54a3db99-d6c4-417b-9422-44b5d4303435)
   
 ## RF Prediction of Drug Use from AMI%
 Random Forest model estimates state-level drug use based on mental illness rates.
-![Image](https://github.com/user-attachments/assets/3f45bdc7-c53a-4073-a1d1-0de5c6fe6ae8)
+![Image](https://github.com/user-attachments/assets/67c1f166-48b2-42ca-8018-9a7ae1d0a645)
   
 ## SMI% vs Violent Crime Rate
 Shows a weak positive trend between serious mental illness rates and violent crime.
-![Image](https://github.com/user-attachments/assets/34761668-3c5d-49bb-bc67-4af405381e0e)
+![Image](https://github.com/user-attachments/assets/64be224c-74e1-4423-be87-8058e80d1793)
 
 ## RF Prediction: Violent Crime from SMI% and Drug Use%
 Visualizes how well the Random Forest model predicts violent crime based on serious mental illness and drug use rates.
-![Image](https://github.com/user-attachments/assets/d76960ae-646b-43e1-b45c-855b7c3f45a3)
+![Image](https://github.com/user-attachments/assets/5b1a8fb5-dc2e-4502-88c8-4e6f33fc8df7)
   
 ## Prediction Residuals: RF Model for Violent Crime
 Shows the difference between actual and predicted violent crime rates by state, highlighting model accuracy.
-![Image](https://github.com/user-attachments/assets/9b2315bd-1573-446e-a343-935e9b76544f)
+![Image](https://github.com/user-attachments/assets/34417578-8cf1-41e3-9298-1012f1948de0)
 
 ## Key Findings
 
