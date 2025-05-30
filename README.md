@@ -112,19 +112,6 @@ For each hypothesis, their R² (coefficient of determination) values were used t
   
 ## Visualizations
   
-
-![Image](https://github.com/user-attachments/assets/04c015fe-87e1-4873-9223-fdf330b90e91)
-
-![Image](https://github.com/user-attachments/assets/52bc8135-04dc-403b-9447-8a134a9549e1)
-
-![Image](https://github.com/user-attachments/assets/bdae4ba2-3f27-45c3-b809-ab14374a337b)
-
-
-
-
-
-
-
 ### Correlation Heatmap
 Shows the relationship between mental illness, drug use, service access and crime.
 ![Image](https://github.com/user-attachments/assets/f0a33cf7-2a74-414f-8fdf-3010a11d4cfa)
