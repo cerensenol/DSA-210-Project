@@ -106,7 +106,9 @@ Population normalized metrics include:
 
 ## Methods
 
-The analysis began with exploratory data analysis (EDA), followed by hypothesis testing. To quantify relationships between variables, Linear Regression (a fundamental machine learning technique suitable for small, well-structured datasets) was applied. For each hypothesis, their R² (coefficient of determination) values were used to evaluate explanatory power.
+The analysis began with exploratory data analysis (EDA), followed by hypothesis testing. To quantify relationships between variables, Linear Regression (a fundamental machine learning technique suitable for small, well-structured datasets) was applied. Additionally, Random Forest Regression (a more flexible, ensemble-based machine learning method) was used to model complex, non-linear relationships for each hypothesis. This provided an alternate view of predictive patterns and was useful for comparing model accuracy.
+
+For each hypothesis, R² (coefficient of determination) values were used to evaluate explanatory power.
   
 ## Visualizations
   
@@ -165,12 +167,14 @@ Shows the difference between actual and predicted violent crime rates by state, 
 - A linear regression between Facilities_per_100k and DrugUse% was conducted.
 - The regression line showed a weak negative slope, suggesting that greater access may reduce drug use.
 - However, the R² score was low, indicating that other factors are likely influential.
+- A Random Forest Regression model was also applied to predict drug use based on facility access; predictions broadly aligned with actual values, but with limited accuracy
 
 ### Hypothesis 2: AMI% → Drug Use / Crime
 
 - Two separate regressions:
   - AMI% vs Drug Use%: A weak to moderate positive trend, supporting the hypothesis.
   - AMI% vs Violent Crime: Slight positive slope but again with a low R².
+- A Random Forest Regression was used to predict drug use based on AMI%, providing more flexible, state-level predictions.
 - Suggests that while mental illness correlates with both outcomes, the relationship is not strong enough alone to explain the variation.
 
 ### Hypothesis 3: SMI% + Drug Use% → Violent Crime
@@ -178,6 +182,7 @@ Shows the difference between actual and predicted violent crime rates by state, 
 - A multiple linear regression using SMI% and Drug Use% as predictors was conducted.
 - Drug use emerged as a stronger predictor than SMI%.
 - The model performed moderately well (R² around 0.4), indicating partial explanatory power.
+- A Random Forest model was also used to predict violent crime from both variables. Residual analysis revealed model strengths and weaknesses across states.
   
 ## Limitations
 
@@ -193,4 +198,6 @@ This study supports the idea that mental illness and substance use are meaningfu
 - Mental illness, particularly when untreated, is associated with increased drug use.
 - Drug use is more strongly associated with violent crime than mental illness alone.
 - States with better access to mental health services may see slightly lower substance use, but access alone is not a sufficient predictor.
-- Linear regression models helped reveal these patterns, though their explanatory power was moderate at best-highlighting the need for more granular or multi-factor data (e.g., socioeconomic, education, policy).
+To come to these conclusions both Linear Regression and Random Forest Regression models were used. While linear models revealed general trends; Random Forest models provided a more nuanced, non-linear understanding and allowed for comparisons between actual and predicted outcomes.
+
+These findings highlight the complexity of social and behavioral health issues and suggest the need for more granular, multi-factor data (e.g. socioeconomic status, education, local policy) to build more accurate predictive models in the future.
