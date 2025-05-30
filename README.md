@@ -197,7 +197,7 @@ This study supports the idea that mental illness and substance use are meaningfu
 
 - Mental illness, particularly when untreated, is associated with increased drug use.
 - Drug use is more strongly associated with violent crime than mental illness alone.
-- States with better access to mental health services may see slightly lower substance use, but access alone is not a sufficient predictor.
+- States with better access to mental health services may see slightly lower substance use, but access alone is not a sufficient predictor.  
 To come to these conclusions both Linear Regression and Random Forest Regression models were used. While linear models revealed general trends; Random Forest models provided a more nuanced, non-linear understanding and allowed for comparisons between actual and predicted outcomes.
 
 These findings highlight the complexity of social and behavioral health issues and suggest the need for more granular, multi-factor data (e.g. socioeconomic status, education, local policy) to build more accurate predictive models in the future.
