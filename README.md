@@ -126,19 +126,18 @@ Reveals a mild positive correlation between drug use and violent crime rates acr
   
 ## Facilities per 100k by State
 Compares the availability of mental health facilities across states on a per capita basis.
-![Image](https://github.com/user-attachments/assets/04c015fe-87e1-4873-9223-fdf330b90e91)
+![Image](https://github.com/user-attachments/assets/3ff9af98-c5c4-420e-8634-ab357add11e3)
   
 ## Facilities vs. Drug Use
 Examines the relationship between mental health service access and drug use, showing a weak negative trend.
-![Image](https://github.com/user-attachments/assets/bdae4ba2-3f27-45c3-b809-ab14374a337b)
+![Image](https://github.com/user-attachments/assets/04c015fe-87e1-4873-9223-fdf330b90e91)
   
 ## Drug Use from Facility Access
-Compares actual and predicted drug use rates based on facility access, highlighting predictive accuracy across states.
-![Image](https://github.com/user-attachments/assets/bdae4ba2-3f27-45c3-b809-ab14374a337b)
+![Image](https://github.com/user-attachments/assets/52bc8135-04dc-403b-9447-8a134a9549e1)
 
 ## AMI% vs Drug Use%
 Displays a positive linear trend between any mental illness and drug use, showing a potential link between the two.
-![Image](https://github.com/user-attachments/assets/54a3db99-d6c4-417b-9422-44b5d4303435)
+![Image](https://github.com/user-attachments/assets/bdae4ba2-3f27-45c3-b809-ab14374a337b)
   
 ## AMI% vs Violent Crime Rate
 Shows a mild positive trend, suggesting that higher mental illness rates may slightly relate to increased violent crime.
